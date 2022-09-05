@@ -43,6 +43,15 @@ input[type="submit"]{
   cursor: pointer;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover, button:hover{
   opacity: 1;
+}
+
+a{
+  font-weight: bolder;
+  text-decoration: none;
+  border:1px solid white;
+  padding:5px;
+  cursor: pointer;
+  color: white;
 }
