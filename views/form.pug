@@ -1,0 +1,12 @@
+extends layout
+
+block content 
+    h1 Add a message
+    form(method="POST" action="/new")
+        div(class="input-container")
+            label(for="name") Your name:
+            input(type="text" id="name" name="name")
+        div(class="input-container")
+            label(for="message") Your message:
+            textarea(id="message" name="message")
+        input(type="submit" value="Add Message")
