@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  ul(class="message-container")
+    each val, i in messages
+      div
+        div User: #{val.user} Date: #{val.added}
+        div Message: #{val.text}
+          
+
